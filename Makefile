@@ -2,7 +2,7 @@ CC=g++
 CFLAGS=
 LDFLAGS=
 LDLIBS=-ludev
-OBJS=main.o udev.o
+OBJS=main.o udevManager.o
 TARGET=app.out
  
 all: $(TARGET)
@@ -16,4 +16,4 @@ $(TARGET): $(OBJS)
 
 main.o: main.cpp
 
-udev.o: udev.cpp
+udevManager.o: udevManager.cpp
